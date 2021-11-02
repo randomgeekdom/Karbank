@@ -1,4 +1,4 @@
-﻿namespace Karbank.Model
+﻿namespace Karbank.Services
 {
     public class Class1
     {
