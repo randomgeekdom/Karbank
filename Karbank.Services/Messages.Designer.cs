@@ -88,6 +88,15 @@ namespace Karbank.Services {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You cannot transfer to the same account..
+        /// </summary>
+        public static string SameAccount {
+            get {
+                return ResourceManager.GetString("SameAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Transaction amount must be greater than 0..
         /// </summary>
         public static string TransactionGreaterThanZero {

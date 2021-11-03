@@ -22,6 +22,8 @@
                 return Messages.InvalidAccountNumber;
             }
 
+            account.Balance += amount;
+
             this.accountRepository.UpdateAccountBalance(account.AccountNumber, account.Balance);
 
             return Messages.TransactionSuccessful;
@@ -32,6 +34,11 @@
             if (amount <= 0)
             {
                 return Messages.TransactionGreaterThanZero;
+            }
+
+            if (debitAccountNumber == creditAccountNumber)
+            {
+                return Messages.SameAccount;
             }
 
             var debitAccount = this.accountRepository.GetAccount(debitAccountNumber);
