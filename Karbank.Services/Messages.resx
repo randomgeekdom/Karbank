@@ -132,4 +132,7 @@
   <data name="TransactionSuccessful" xml:space="preserve">
     <value>Your transaction has completed successfully.</value>
   </data>
+  <data name="WithdrawLimit" xml:space="preserve">
+    <value>You cannot withdraw more than {0} from this account.</value>
+  </data>
 </root>

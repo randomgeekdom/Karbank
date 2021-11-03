@@ -22,7 +22,7 @@ namespace Karbank.Services {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Messages {
+    public class Messages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Karbank.Services {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Karbank.Services.Messages", typeof(Messages).Assembly);
@@ -51,7 +51,7 @@ namespace Karbank.Services {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Karbank.Services {
         /// <summary>
         ///   Looks up a localized string similar to Your account has insufficient funds for this transaction..
         /// </summary>
-        internal static string InsufficientFunds {
+        public static string InsufficientFunds {
             get {
                 return ResourceManager.GetString("InsufficientFunds", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace Karbank.Services {
         /// <summary>
         ///   Looks up a localized string similar to The account number you have entered is invalid..
         /// </summary>
-        internal static string InvalidAccountNumber {
+        public static string InvalidAccountNumber {
             get {
                 return ResourceManager.GetString("InvalidAccountNumber", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace Karbank.Services {
         /// <summary>
         ///   Looks up a localized string similar to You cannot withdraw or transfer funds from this account since you are not the owner..
         /// </summary>
-        internal static string InvalidOwner {
+        public static string InvalidOwner {
             get {
                 return ResourceManager.GetString("InvalidOwner", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace Karbank.Services {
         /// <summary>
         ///   Looks up a localized string similar to Transaction amount must be greater than 0..
         /// </summary>
-        internal static string TransactionGreaterThanZero {
+        public static string TransactionGreaterThanZero {
             get {
                 return ResourceManager.GetString("TransactionGreaterThanZero", resourceCulture);
             }
@@ -99,9 +99,18 @@ namespace Karbank.Services {
         /// <summary>
         ///   Looks up a localized string similar to Your transaction has completed successfully..
         /// </summary>
-        internal static string TransactionSuccessful {
+        public static string TransactionSuccessful {
             get {
                 return ResourceManager.GetString("TransactionSuccessful", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You cannot withdraw more than {0} from this account..
+        /// </summary>
+        public static string WithdrawLimit {
+            get {
+                return ResourceManager.GetString("WithdrawLimit", resourceCulture);
             }
         }
     }

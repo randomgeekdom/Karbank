@@ -1,4 +1,6 @@
 ﻿namespace Karbank.Model
 {
-    public class CheckingAccount : Account { }
+    public class CheckingAccount : Account
+    {
+    }
 }
