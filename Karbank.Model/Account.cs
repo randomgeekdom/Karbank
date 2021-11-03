@@ -2,7 +2,8 @@
 {
     public abstract class Account
     {
-        public User Owner { get; set; }
+        public int AccountNumber { get; set; }
+        public int OwnerId { get; set; }
         public double Balance { get; set; }
     }
 }
